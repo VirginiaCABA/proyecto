@@ -165,9 +165,9 @@ body {
 
 .section .section_items .texto_iconos {
     font-weight: 600;
-
-
 }
+
+
 
 /*--------------------------ASIDE----------------------------*/
 .aside {
@@ -439,3 +439,9 @@ body {
         display: none;
     }
 }
+
+/*--------FORMULARIO---------*/
+label {
+	display: block;
+	margin-bottom: 5px;
+  }
