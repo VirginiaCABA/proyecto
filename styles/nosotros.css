@@ -85,8 +85,10 @@ body {
 
 .header {
     grid-area: header;
+    z-index: 10;
     background: rgb(110, 110, 110);
     width: 100%;
+    position: fixed;
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.75);
 }
 
@@ -96,17 +98,11 @@ body {
 
     grid-area: contenido;
     color: rgb(0, 0, 0);
-    /* background-color: rgba(241, 149, 149, 0.774); */
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
     display: grid;
     gap: 20px;
     grid-template:
-        "titulo    titulo" 60px
-        "cuerpo1  cuerpo2" auto
-        "cuerpo3  cuerpo4" auto /
-        1fr 1fr;
+        "titulo" 60px
+        "cuerpo" auto;
 }
 
 .section .titulo {
@@ -122,51 +118,65 @@ body {
     font-style: italic;
 }
 
-
-.section #item1 {
-    grid-area: cuerpo1;
+.section #item1,
+.section #item2 {
+    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    position: relative;
+    grid-area: cuerpo;
+    width: 90%;
+    display: flex;
+    text-align: justify;
+    margin: 0 auto;
+    top: 1rem;
 }
 
 .section #item2 {
-    grid-area: cuerpo2;
-}
-
-.section #item3 {
-    grid-area: cuerpo3;
-}
-
-.section #item4 {
-    grid-area: cuerpo4;
-
-}
-
-.section #item1,
-.section #item2,
-.section #item3,
-.section #item4 {
-    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
-    width: 20rem;
-    height: auto;
-    display: flex;
     flex-direction: row-reverse;
+}
+
+.section .section_items .section_img {
+    width: 30%;
+    height: 11rem;
+
+}
+
+#img_izq {
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+#img_der {
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.section .section_items .section_texto {
+    position: absolute;
+    width: 70%;
+    height: 11rem;
     align-items: center;
-    margin: .5em auto;
-    background-color: rgba(40, 37, 241, 0.24);
-    border-radius: 3rem;
-    padding: 1em;
+    padding: .5em 1em;
+    background-color: rgb(255, 255, 255);
 }
 
-
-.section .section_items .body_iconos {
-    height: 5rem;
-    margin-left: .5em;
+#texto_der {
+    display: flex;
+    left: 27%;
+    border-radius: 2rem;
+    padding: 1rem;
 }
 
-.section .section_items .texto_iconos {
-    font-weight: 600;
+#texto_izq {
+    display: flex;
+    right: 27%;
+    border-radius: 2rem;
+    padding: 1rem;
 }
 
-
+.ubicacion {
+    margin: 4rem auto;
+}
 
 /*--------------------------ASIDE----------------------------*/
 .aside {
@@ -174,16 +184,12 @@ body {
 }
 
 .foto_aside {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    margin-top: auto;
 }
 
 /*--------------------------FOOTER--------------------------*/
 .footer {
     grid-area: footer;
-    /* background-color: rgba(65, 48, 48, 0.534); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,24 +208,14 @@ body {
 
 }
 
-@media screen and (max-width: 970px) and (min-width:810px) {
+/*----------------MEDIAS QUERIES--------------*/
+
+@media screen and (max-width: 899px) and (min-width:814px) {
     .grid-container {
         grid-template:
             "header   " 70px
             "contenido " auto
             "footer   " 60px
-    }
-
-    .section {
-        grid-area: contenido;
-        color: rgb(0, 0, 0);
-        display: grid;
-        gap: 20px;
-        grid-template:
-            "titulo    titulo" 60px
-            "cuerpo1  cuerpo2" auto
-            "cuerpo3  cuerpo4" auto /
-            1fr 1fr;
     }
 
     .aside {
@@ -227,14 +223,13 @@ body {
     }
 }
 
-@media screen and (max-width:810px) and (min-width:400px) {
+@media screen and (max-width: 813px) and (min-width:690px) {
     .grid-container {
         grid-template:
             "header   " 70px
             "contenido " auto
             "footer   " 60px
     }
-
     .contenedor ul {
         display: flex;
         flex-direction: column;
@@ -249,40 +244,84 @@ body {
         flex-direction: row-reverse;
     }
 
-    .section {
-        margin-top: 3rem;
-        grid-area: contenido;
-        color: rgb(0, 0, 0);
-        display: grid;
-        gap: 20px;
-        grid-template:
-            "titulo  " 60px
-            "cuerpo1 " auto
-            "cuerpo2" auto
-            "cuerpo3 " auto
-            "cuerpo4" auto;
-    }
-
-    .section #item1,
-    .section #item2,
-    .section #item3,
-    .section #item4 {
-        width: 100%;
-    }
-
     .aside {
         display: none;
     }
+
+    .section {
+        margin-top: 4rem;
+    }
 }
 
-@media screen and (max-width:400px) and (min-width:270px) {
+@media screen and (max-width: 689px) and (min-width:400px) {
     .grid-container {
         grid-template:
             "header   " 70px
             "contenido " auto
             "footer   " 60px
     }
+    .contenedor ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .header_list {
+        margin-bottom: .2em;
+    }
+
+    .contenedor {
+        flex-direction: row-reverse;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    .section {
+        margin-top: 4rem;
+    }
+
+
+    .section #item1,
+    .section #item2 {
+        box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 2rem;
+        position: relative;
+        grid-area: cuerpo;
+        width: 100%;
+        display: flex;
+        text-align: justify;
+        top: 1rem;
+    }
+    
+
+    .section #item2 {
+        flex-direction: row-reverse;
+    }
+
+    .section .section_items .section_img {
+        width: 30%;
+        height: 13rem;
+
+    }
+
+    .section .section_items .section_texto {
+        position: absolute;
+        width: 70%;
+        height: 13rem;
+        align-items: center;
+        padding: .5em 1em;
+        background-color: rgb(255, 255, 255);
+    }
+}
+@media screen and (max-width: 399px){
+    .grid-container {
+        grid-template:
+            "header   " 70px
+            "contenido " auto
+            "footer   " 60px
+    }
     .contenedor ul {
         display: flex;
         flex-direction: column;
@@ -306,93 +345,44 @@ body {
         margin-right: 1em;
     }
 
-    .section {
-        margin-top: 3rem;
-        grid-area: contenido;
-        color: rgb(0, 0, 0);
-        display: grid;
-        gap: 20px;
-        grid-template:
-            "titulo  " 60px
-            "cuerpo1 " auto
-            "cuerpo2" auto
-            "cuerpo3 " auto
-            "cuerpo4" auto;
-    }
-
-    .section #item1,
-    .section #item2,
-    .section #item3,
-    .section #item4 {
-        width: 100%;
-    }
-
-
-
-
     .aside {
         display: none;
     }
-}
-
-@media screen and (max-width:270px) {
-    .grid-container {
-        grid-template:
-            "header   " 70px
-            "contenido " auto
-            "footer   " 60px
-    }
-
-    .contenedor ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header_list {
-        margin-bottom: .2em;
-    }
-
-    .contenedor {
-        flex-direction: row-reverse;
-        margin: 0;
-    }
-    .logo a{
-        display: none;
-    }
-
 
     .section {
         margin-top: 4rem;
-        grid-area: contenido;
-        color: rgb(0, 0, 0);
-        display: grid;
-        gap: 20px;
-        grid-template:
-            "titulo  " 60px
-            "cuerpo1 " auto
-            "cuerpo2" auto
-            "cuerpo3 " auto
-            "cuerpo4" auto;
     }
+
 
     .section #item1,
-    .section #item2,
-    .section #item3,
-    .section #item4 {
+    .section #item2 {
+        box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 2rem;
+        position: relative;
+        grid-area: cuerpo;
         width: 100%;
+        display: flex;
+        text-align: justify;
+        top: 1rem;
+    }
+    
+
+    .section #item2 {
+        flex-direction: row-reverse;
     }
 
+    .section .section_items .section_img {
+        width: 30%;
+        height: 13rem;
 
+    }
 
-
-    .aside {
-        display: none;
+    .section .section_items .section_texto {
+        position: absolute;
+        width: 70%;
+        height: 13rem;
+        align-items: center;
+        padding: .5em 1em;
+        background-color: rgb(255, 255, 255);
     }
 }
-
-/*--------FORMULARIO---------*/
-label {
-	display: block;
-	margin-bottom: 5px;
-  }

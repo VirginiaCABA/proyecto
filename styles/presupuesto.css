@@ -86,6 +86,7 @@ body {
 .header {
     grid-area: header;
     background: rgb(110, 110, 110);
+    position: fixed;
     width: 100%;
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.75);
 }
@@ -151,7 +152,7 @@ body {
     flex-direction: row-reverse;
     align-items: center;
     margin: .5em auto;
-    background-color: rgba(40, 37, 241, 0.24);
+    background-color: rgba(22, 18, 212, 0.397);
     border-radius: 3rem;
     padding: 1em;
 }
@@ -171,6 +172,7 @@ body {
 /*--------------------------ASIDE----------------------------*/
 .aside {
     grid-area: aside;
+    /* background-color: rgba(163, 149, 241, 0.774); */
 }
 
 .foto_aside {
@@ -329,6 +331,53 @@ body {
 
 
 
+
+    .aside {
+        display: none;
+    }
+}
+@media screen and (max-width:810px) and (min-width:400px) {
+    .grid-container {
+        grid-template:
+            "header   " 70px
+            "contenido " auto
+            "footer   " 60px
+    }
+
+    .contenedor ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header_list {
+        margin-bottom: .2em;
+    }
+
+    .contenedor {
+        flex-direction: row-reverse;
+    }
+
+    .section {
+        margin-top: 3rem;
+        grid-area: contenido;
+        color: rgb(0, 0, 0);
+        display: grid;
+        gap: 20px;
+        grid-template:
+            "titulo  " 60px
+            "cuerpo1 " auto
+            "cuerpo2" auto
+            "cuerpo3 " auto
+            "cuerpo4" auto;
+    }
+
+    .section #item1,
+    .section #item2,
+    .section #item3,
+    .section #item4 {
+        width: 100%;
+    }
 
     .aside {
         display: none;
