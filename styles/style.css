@@ -85,11 +85,12 @@ body {
 
 .header {
     grid-area: header;
+    z-index: 10;
     background: rgb(110, 110, 110);
     width: 100%;
+    position: fixed;
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.75);
 }
-
 
 /*--------------------------CUERPO PRINCIPAL--------------------------*/
 .section {
@@ -211,6 +212,7 @@ body {
     }
 
     .section {
+        margin-top: 2.5rem;
         grid-area: contenido;
         color: rgb(0, 0, 0);
         display: grid;
@@ -250,7 +252,7 @@ body {
     }
 
     .section {
-        margin-top: 3rem;
+        margin-top: 4rem;
         grid-area: contenido;
         color: rgb(0, 0, 0);
         display: grid;
@@ -307,7 +309,7 @@ body {
     }
 
     .section {
-        margin-top: 3rem;
+        margin-top: 4rem;
         grid-area: contenido;
         color: rgb(0, 0, 0);
         display: grid;
@@ -363,7 +365,7 @@ body {
 
 
     .section {
-        margin-top: 4rem;
+        margin-top: 5rem;
         grid-area: contenido;
         color: rgb(0, 0, 0);
         display: grid;

@@ -230,6 +230,7 @@ body {
             "contenido " auto
             "footer   " 60px
     }
+
     .contenedor ul {
         display: flex;
         flex-direction: column;
@@ -260,6 +261,7 @@ body {
             "contenido " auto
             "footer   " 60px
     }
+
     .contenedor ul {
         display: flex;
         flex-direction: column;
@@ -294,7 +296,7 @@ body {
         text-align: justify;
         top: 1rem;
     }
-    
+
 
     .section #item2 {
         flex-direction: row-reverse;
@@ -315,13 +317,15 @@ body {
         background-color: rgb(255, 255, 255);
     }
 }
-@media screen and (max-width: 399px){
+
+@media screen and (max-width: 399px) {
     .grid-container {
         grid-template:
             "header   " 70px
             "contenido " auto
             "footer   " 60px
     }
+
     .contenedor ul {
         display: flex;
         flex-direction: column;
@@ -336,7 +340,8 @@ body {
         flex-direction: row-reverse;
         margin: 0;
     }
-    .logo a h1{
+
+    .logo a h1 {
         display: none;
     }
 
@@ -365,7 +370,7 @@ body {
         text-align: justify;
         top: 1rem;
     }
-    
+
 
     .section #item2 {
         flex-direction: row-reverse;
@@ -385,4 +390,11 @@ body {
         padding: .5em 1em;
         background-color: rgb(255, 255, 255);
     }
+}
+
+/*---------------mapa--------------*/
+#mapDiv {
+    height: 30rem;
+    width: 30rem;
+    border-radius: .5em;
 }
