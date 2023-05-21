@@ -93,24 +93,10 @@ body {
 
 
 /*--------------------------CUERPO PRINCIPAL--------------------------*/
-/* .section {
-
-    grid-area: contenido;
-    color: rgb(0, 0, 0);
-    display: grid;
-    gap: 20px;
-    grid-template:
-        "titulo    titulo" 60px
-        "cuerpo1  cuerpo2" auto
-        "cuerpo3  cuerpo4" auto /
-        1fr 1fr;
-} */
-
 .section {
     grid-area: contenido;
     color: rgb(0, 0, 0);
-    display: grid;
-    gap: 20px;
+    /* display: grid; */
     grid-template:
         "titulo" 60px
         "cuerpo" auto;
@@ -131,11 +117,18 @@ body {
 
 
 .section .formulario {
-    margin-top: 4rem;
+    margin-top: 3rem;
     grid-area: cuerpo;
+    background-color: rgba(40, 37, 241, 0.25);
+    border-radius: 3rem;
+    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
+
 }
 
-
+/*--------CORREO---------*/  
+#correo{
+    opacity:0;
+}
 /*--------------------------ASIDE----------------------------*/
 .aside {
     grid-area: aside;
@@ -294,5 +287,7 @@ body {
 /*--------FORMULARIO---------*/
 label {
 	display: block;
-	margin-bottom: 5px;
-  }
+	margin-bottom: 1px;
+    margin-top: 8px;
+    
+}
