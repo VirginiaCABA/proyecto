@@ -145,22 +145,28 @@ body {
 .section #item2,
 .section #item3,
 .section #item4 {
-    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
-    width: 20rem;
+    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.356);
+    width: 25rem;
     height: auto;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     margin: .5em auto;
-    background-color: rgba(40, 37, 241, 0.24);
-    border-radius: 3rem;
+    background-color: rgba(65, 64, 94, 0.24);
+    border-radius: .5rem;
     padding: 1em;
 }
 
 
 .section .section_items .body_iconos {
-    height: 5rem;
-    margin-left: .5em;
+    height: 8rem;
+
+}
+
+.section>#item2>.body_iconos,
+.section>#item3>.body_iconos {
+    height: 9rem;
+
 }
 
 .section .section_items .texto_iconos {
@@ -204,6 +210,15 @@ body {
     width: auto;
     padding: 0 10px;
 
+}
+
+@media screen and (max-width: 1200px) and (min-width:971px) {
+    .section #item1,
+    .section #item2,
+    .section #item3,
+    .section #item4 {
+        width: 20rem;
+    }
 }
 
 @media screen and (max-width: 970px) and (min-width:810px) {
@@ -302,7 +317,8 @@ body {
         flex-direction: row-reverse;
         margin: 0;
     }
-    .logo a h1{
+
+    .logo a h1 {
         display: none;
     }
 
@@ -362,7 +378,8 @@ body {
         flex-direction: row-reverse;
         margin: 0;
     }
-    .logo a{
+
+    .logo a {
         display: none;
     }
 
@@ -398,6 +415,6 @@ body {
 
 /*--------FORMULARIO---------*/
 label {
-	display: block;
-	margin-bottom: 5px;
-  }
+    display: block;
+    margin-bottom: 5px;
+}
