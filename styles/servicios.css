@@ -457,15 +457,12 @@ section .titulo{
         background-color: rgb(255, 255, 255);
     }
 
-<<<<<<< HEAD
-=======
 /*---------------mapa--------------*/
 #mapDiv {
     height: 30rem;
     width: 30rem;
     border-radius: .5em;
 }
-.menu{
+.menu {
     color: white;
->>>>>>> 3c94532c084a647fb662f1d783c2ec1a3601f0f8
 }
