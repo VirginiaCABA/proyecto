@@ -318,7 +318,7 @@ body {
     }
 }
 
-@media screen and (max-width: 469px) {
+@media screen and (max-width: 469px) and (min-width: 271px){
     .grid-container {
         grid-template:
             "header   " 70px
@@ -388,6 +388,80 @@ body {
         padding: 1em 1em;
         background-color: rgb(255, 255, 255);
     }
+}
+@media screen and (max-width: 270px){
+    .grid-container {
+        grid-template:
+            "header   " 70px
+            "contenido " auto
+            "footer   " 60px
+    }
+
+    .contenedor ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header_list {
+        margin-bottom: .2em;
+    }
+
+    .contenedor {
+        flex-direction: row-reverse;
+        margin: 0;
+    }
+
+    .logo a h1 {
+        display: none;
+    }
+
+    .header_logo {
+        height: 5rem;
+        margin-right: 1em;
+    }
+    .logo a {
+        display: none;
+    }
+    .aside {
+        display: none;
+    }
+
+    .section {
+        margin-top: 4rem;
+    }
+
+
+    .section #item1,
+    .section #item2 {
+        box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 2rem;
+        position: relative;
+        grid-area: cuerpo;
+        height: 18rem;
+        width: 100%;
+        display: flex;
+        text-align: justify;
+        top: 1rem;
+    }
+
+
+    .section .section_items .section_img {
+        width: 30%;
+        height: 18rem;
+        display: none;
+
+    }
+
+    .section .section_items .section_texto {
+        position: static;
+        width: 100%;
+        height: 18rem;
+        align-items: center;
+        padding: 1em 1em;
+        background-color: rgb(255, 255, 255);
+    }
+
 }
 
 /*---------------mapa--------------*/

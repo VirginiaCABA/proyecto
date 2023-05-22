@@ -9,9 +9,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
     <link rel="icon" type="/img/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest"> 
+    <link rel="manifest" href="/site.webmanifest">
     <!--------------FAVICON--------------->
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/servicios.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -26,9 +26,150 @@
     </header>
 
     <section class="section">
-        
+        <article class="titulo">
+            <h1>NUESTROS SERVICIOS</h1>
+            <h3></h3>
+        </article>
+        <div class="sect-cont">
+            <article class="contenido">
+                <div class="subtitulo">
+                    <h1>COURIER - MENSAJERÍA - CADETES FIJOS</h1>
+                </div>
+                <div class="texto">
+                    <p>Ofrecemos el servicio de moto mensajería empresarial. Realizamos todo tipo de trámites y
+                        gestiones
+                        cotidianas de forma rápida y eficiente. Podemos reducir costos y optimizar los recursos de
+                        nuestros
+                        clientes. Nos caracterizamos por la responsabilidad con la que asumimos el trabajo, el tiempo de
+                        respuesta y la calidad de nuestro servicio. Tenemos un staff fijo, altamente capacitado y
+                        confiable.
+                        Brindamos una gran cobertura en CABA Y TODO EL GBA.</p>
+                </div>
+                <div class="calculadora">
+                    <h1>Calcule su presupuesto</h1>
+
+
+                    <form class="form-calc1" id="form">
+                        <div class="">
+                            <label for="" class="">Ingrese los Km de viaje</label>
+                            <br>
+                            <input type="number" class="" id="n1">
+                        </div>
+                        <div class="text-center" id="">
+                            <button type="button" onclick="multiplicar()" class="" id="btn-verde">Calcular</button>
+                            <button type="button" onclick="limpiar()" class="" id="">Limpiar</button>
+                        </div>
+                        <div class="resultado" >
+                            <label for="result" class="" >Presupuesto aproximado</label>
+                            <input type="number" class="" name="resultado1" id="resultado1">
+                        </div>
+                    </form>
+
+                </div>
+            </article>
+        </div>
+        <div class="sect-cont">
+            <article class="contenido">
+                <div class="subtitulo">
+                    <h1>TRASNPORTES Y CARGAS</h1>
+                </div>
+                <div class="texto">
+                    <p>Contamos con Utilitarios (Mini Fletes), Camionetas y Camiones urbanos y transportes para cargas
+                        pesadas de larga distancias.
+                        Traslados de mercancías en utilitarios mini fletes (hasta 500 kg).
+                        Camionetas Urbanas tipo Master, F100, Boxer, Sprinter, Iveco hasta 3500kg.
+                        Camiones Urbanos desde 3000 hasta 8000 kg agiles en CABA Y GBA.
+                        Transporte pesado. Camiones Semis, playos, chasis, térmicos. Viajamos a todo el País.</p>
+                </div>
+                <div class="calculadora">
+                    <h1>Calcule su presupuesto</h1>
+
+                    <form class="form-calc1" id="form">
+                        <div class="">
+                            <label for="" class="">Ingrese los Km de viaje</label>
+                            <br>
+                            <input type="number" class="" id="nKm">
+                        </div>
+
+                        <div class="text-center" id="">
+                            <button type="button" onclick="multiplicar()" class="" id="">Calcular</button>
+                            <button type="button" onclick="limpiar()" class="" id="">Limpiar</button>
+                        </div>
+                        <div class="" id="resultado">
+                            <label for="" class="">Presupuesto aproximado</label>
+                            <input type="number" class="" id="resultado">
+                        </div>
+                    </form>
+
+                </div>
+
+            </article>
+        </div>
+        <div class="sect-cont">
+            <article class="contenido">
+                <div class="subtitulo">
+                    <h1>E-COMMERCE Y DISTRIBUCION DE PAQUETERIA</h1>
+                </div>
+                <div class="texto">
+                    <p>Recibimos, organizamos, ruteamos y entregamos paquetería en todo el AMBA.
+                        Retiro de productos en el domicilio.
+                        Entrega de tu producto en el domicilio del comprador.
+                        Seguimiento de los envíos.
+                        Depósito para utilizar como pickup store, lo cual tiene el beneficio de reducir costo de
+                        entregar en domicilio.
+                        Remito por cada envío que garantiza el seguimiento y correcta entrega del producto.
+                        Beneficios por consolidación de varios paquetes a un mismo destinatario.
+                        Beneficios para clientes con volumen de envíos.
+                        Logística inversa.</p>
+                </div>
+                <div class="calculadora">
+                    <h1>Calcule su presupuesto</h1>
+
+                    <form class="form-calc1" id="calc-ecom">
+                        <div class="">
+                            <label for="" class="">Ingrese los Km de viaje</label>
+                            <br>
+                            <input type="number" class="" id="nKm">
+                        </div>
+
+                        <div class="text-center" id="">
+                            <button type="button" onclick="multiplicar()" class="" id="btn-verde">Calcular</button>
+                            <button type="button" onclick="limpiar()" class="" id="">Limpiar</button>
+                        </div>
+                        <div class="" id="resultado">
+                            <label for="" class="">Presupuesto aproximado</label>
+                            <input type="number" class="" id="resultado">
+                        </div>
+                    </form>
+
+                </div>
+            </article>
+        </div>
+        <!-- <div id="calculadora">
+            <h1>Calcule su presupuesto</h1>
+            <div class="form-calc">
+
+                <form class="" id="">
+                    <div class="">
+                        <label for="" class="">Ingrese los Km de viaje</label>
+                        <input type="number" class="" id="n1">
+                    </div>
+
+
+                    <div class="text-center" id="">
+                        <button type="button" onclick="multiplicar()" class="" id="btn-verde">Calcular</button>
+                        <button type="button" onclick="limpiar()" class="" id="">Limpiar</button>
+                    </div>
+                    <div class="" id="resultado">
+                        <label for="" class="">Presupuesto aproximado</label>
+                        <input type="number" class="form-control" id="n2">
+                    </div>
+                </form>
+            </div>
+        </div> -->
+        </div>
     </section>
-        
+
 
     <aside class="aside">
         <img class="foto_aside" src="../img/foto_aside.jpg" alt="foto mensajero">
@@ -36,6 +177,7 @@
 
     <footer id="footer" class="footer">
     </footer>
+    <!-- <script src="../js/calculadora.js"></script> -->
 </body>
 
 </html>
