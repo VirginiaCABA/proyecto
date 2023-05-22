@@ -463,6 +463,7 @@ section .titulo{
     width: 30rem;
     border-radius: .5em;
 }
-.menu {
+}
+.menu{
     color: white;
 }
