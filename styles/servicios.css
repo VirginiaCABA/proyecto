@@ -86,7 +86,7 @@ body {
 .header {
     grid-area: header;
     z-index: 10;
-    background: rgb(49,130,189);
+    background: linear-gradient(45deg,  #bdd7e7, #3182bd);
     width: 100%;
     position: fixed;
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.75);
