@@ -49,21 +49,22 @@
                     <h1>Calcule su presupuesto</h1>
 
 
-                    <form class="form-calc1" id="form">
-                        <div class="">
-                            <label for="" class="">Ingrese los Km de viaje</label>
+                    <div class="">
+                        <form action="">
+                            <label for="">Ingrese los Km aproximados</label>
                             <br>
-                            <input type="number" class="" id="n1">
-                        </div>
-                        <div class="text-center" id="">
-                            <button type="button" onclick="multiplicar()" class="" id="btn-verde">Calcular</button>
-                            <button type="button" onclick="limpiar()" class="" id="">Limpiar</button>
-                        </div>
-                        <div class="resultado" >
-                            <label for="result" class="" >Presupuesto aproximado</label>
-                            <input type="number" class="" name="resultado1" id="resultado1">
-                        </div>
-                    </form>
+                            <input type="number" class="celda" id="n1">
+                            <br>
+                            <button type="button" class="botones" onclick="calculadora('c_m_c')">Calcular</button>
+                            <button type="button" class="botones" onclick="limpiar('c_m_c')">Limpiar</button>
+                            <br>
+                            <label for="">Resultado</label>
+                            <br>
+                            <input type="number" name="resultado" class="celda" id="resultado" readonly>
+                            <label for="">$</label>
+                
+                        </form>
+                    </div>
 
                 </div>
             </article>
@@ -84,22 +85,22 @@
                 <div class="calculadora">
                     <h1>Calcule su presupuesto</h1>
 
-                    <form class="form-calc1" id="form">
-                        <div class="">
-                            <label for="" class="">Ingrese los Km de viaje</label>
+                    <div class="">
+                        <form action="">
+                            <label for="">Ingrese los Km aproximados</label>
                             <br>
-                            <input type="number" class="" id="nKm">
-                        </div>
-
-                        <div class="text-center" id="">
-                            <button type="button" onclick="multiplicar()" class="" id="">Calcular</button>
-                            <button type="button" onclick="limpiar()" class="" id="">Limpiar</button>
-                        </div>
-                        <div class="" id="resultado">
-                            <label for="" class="">Presupuesto aproximado</label>
-                            <input type="number" class="" id="resultado">
-                        </div>
-                    </form>
+                            <input type="number" class="celda" id="n2">
+                            <br>
+                            <button type="button" class="botones" onclick="calculadora('t_c')">Calcular</button>
+                            <button type="button" class="botones" onclick="limpiar('t_c')">Limpiar</button>    
+                            <br>
+                            <label for="">Resultado</label>
+                            <br>
+                            <input type="number" name="resultado2" class="celda" id="resultado2" readonly>
+                            <label for="">$</label>
+                
+                        </form>
+                    </div>
 
                 </div>
 
@@ -125,48 +126,25 @@
                 <div class="calculadora">
                     <h1>Calcule su presupuesto</h1>
 
-                    <form class="form-calc1" id="calc-ecom">
-                        <div class="">
-                            <label for="" class="">Ingrese los Km de viaje</label>
+                    <div class="">
+                        <form action="">
+                            <label for="">Ingrese los Km aproximados</label>
                             <br>
-                            <input type="number" class="" id="nKm">
-                        </div>
-
-                        <div class="text-center" id="">
-                            <button type="button" onclick="multiplicar()" class="" id="btn-verde">Calcular</button>
-                            <button type="button" onclick="limpiar()" class="" id="">Limpiar</button>
-                        </div>
-                        <div class="" id="resultado">
-                            <label for="" class="">Presupuesto aproximado</label>
-                            <input type="number" class="" id="resultado">
-                        </div>
-                    </form>
+                            <input type="number" class="celda" id="n3">
+                            <br>
+                            <button type="button" class="botones" onclick="calculadora('e_d')">Calcular</button>
+                            <button type="button" class="botones" onclick="limpiar('e_d')">Limpiar</button>
+                            <br>
+                            <label for="">Resultado</label>
+                            <br>
+                            <input type="number" name="resultado3" class="celda" id="resultado3" readonly>
+                            <label for="">$</label>
+                
+                        </form>
+                    </div>
 
                 </div>
             </article>
-        </div>
-        <!-- <div id="calculadora">
-            <h1>Calcule su presupuesto</h1>
-            <div class="form-calc">
-
-                <form class="" id="">
-                    <div class="">
-                        <label for="" class="">Ingrese los Km de viaje</label>
-                        <input type="number" class="" id="n1">
-                    </div>
-
-
-                    <div class="text-center" id="">
-                        <button type="button" onclick="multiplicar()" class="" id="btn-verde">Calcular</button>
-                        <button type="button" onclick="limpiar()" class="" id="">Limpiar</button>
-                    </div>
-                    <div class="" id="resultado">
-                        <label for="" class="">Presupuesto aproximado</label>
-                        <input type="number" class="form-control" id="n2">
-                    </div>
-                </form>
-            </div>
-        </div> -->
         </div>
     </section>
 
@@ -177,7 +155,7 @@
 
     <footer id="footer" class="footer">
     </footer>
-    <!-- <script src="../js/calculadora.js"></script> -->
+    <script src="../js/calculadora.js"></script>
 </body>
 
 </html>
