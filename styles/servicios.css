@@ -100,11 +100,19 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     
+    
 }
 section .titulo{
     width: 100%;
     margin: 0 auto;
 }
+.contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;    
+}
+
 .sect-cont{
     background-color: rgba(233, 232, 238, 0.726);
     box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.356);
@@ -112,17 +120,12 @@ section .titulo{
     display: flex;
     text-align: justify;
     width: 30%;
-    height: auto;
+    
     margin: 0 .5em;
     padding: 0;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
-.contenido{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
+
 .subtitulo{
     padding: 1em;
     background-color: rgba(4, 61, 216, 0.884);
@@ -131,6 +134,7 @@ section .titulo{
     height: 6rem;
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
+
 }
 .texto{
     margin: 1em;
@@ -141,38 +145,23 @@ section .titulo{
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
     display: flex;
+    justify-content: center;
+    text-align: justify;    
     flex-wrap: wrap;
     padding: 1em;
     margin-top: auto;
+    width: 100%;
 }
-
-.form-calc1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: left;
-    
-}
-
-
-
-
-/* #calculadora{
-    margin-top: 4rem;
-}
-.form-calc {
-    margin: auto;
-    margin-top: 1rem;
-    width: 450px;
-    height: auto;
-    background-color: rgba(4, 61, 216, 0.884);
-    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.356);
+.botones{
+    width: 40%;
+    height: 1.5rem;
     border-radius: .5rem;
-    padding: 10px;
-    color: aliceblue;
-
-} */
-
+    margin: .4em 0;
+}
+.celda{
+    border-radius: .5rem;
+    padding: .3em;
+}
 /*--------------------------ASIDE----------------------------*/
 .aside {
     grid-area: aside;
