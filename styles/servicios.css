@@ -152,40 +152,9 @@ section .titulo{
     margin-top: auto;
     width: 100%;
 }
-<<<<<<< HEAD
 .botones{
     width: 40%;
     height: 1.5rem;
-=======
-
-.form-calc1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: left;
-    
-}
-
-h1{
-    font-size: 30px;
-}
-.menu{
-    color: white;
-}
-
-
-
-/* #calculadora{
-    margin-top: 4rem;
-}
-.form-calc {
-    margin: auto;
-    margin-top: 1rem;
-    width: 450px;
-    height: auto;
-    background-color: rgba(4, 61, 216, 0.884);
-    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.356);
->>>>>>> 2355fd464c7655f5786201098059460005780f2c
     border-radius: .5rem;
     margin: .4em 0;
 }
