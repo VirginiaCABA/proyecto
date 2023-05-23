@@ -356,14 +356,16 @@ h1{
     .section #item4 {
         width: 100%;
     }
+
+    .aside {
+        display: none;
+    }
+
 }
     
 
 
 
-.aside {
-        display: none;
-    }
 
 
 @media screen and (max-width:270px) {
