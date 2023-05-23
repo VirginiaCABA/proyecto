@@ -162,6 +162,13 @@ section .titulo{
     border-radius: .5rem;
     padding: .3em;
 }
+
+h1{
+    font-size: 30px;
+}
+.menu{
+    color: white;
+}
 /*--------------------------ASIDE----------------------------*/
 .aside {
     grid-area: aside;
