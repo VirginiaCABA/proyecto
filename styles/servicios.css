@@ -75,7 +75,7 @@ body {
 
 
 .header_list a:hover {
-    color: white;
+    color: #b9b9b9;
     transition: 0.3s;
 }
 
@@ -86,7 +86,7 @@ body {
 .header {
     grid-area: header;
     z-index: 10;
-    background: rgb(110, 110, 110);
+    background: rgb(49,130,189);
     width: 100%;
     position: fixed;
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.75);
@@ -125,7 +125,7 @@ section .titulo{
 }
 .subtitulo{
     padding: 1em;
-    background-color: rgba(4, 61, 216, 0.884);
+    background-color: rgba(107,174,214);
     color: white;
     width: 100%;
     height: 6rem;
@@ -136,7 +136,7 @@ section .titulo{
     margin: 1em;
 }
 .calculadora{
-    background-color: rgba(4, 61, 216, 0.842);
+    background-color: rgba(107,174,214);
     color:white;
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
@@ -154,6 +154,12 @@ section .titulo{
     
 }
 
+h1{
+    font-size: 30px;
+}
+.menu{
+    color: white;
+}
 
 
 
@@ -191,8 +197,8 @@ section .titulo{
     width: 100%;
     position: fixed;
     bottom: 0;
-    background: rgb(193 193 193);
-}
+    background: rgb(8,81,156);
+}   
 
 .footer_links {
     display: flex;
@@ -200,7 +206,7 @@ section .titulo{
 }
 
 .footer_list img {
-    height: 15px;
+    height: 25px;
     width: auto;
     padding: 0 10px;
 
@@ -463,7 +469,5 @@ section .titulo{
     width: 30rem;
     border-radius: .5em;
 }
-}
-.menu{
-    color: white;
+
 }

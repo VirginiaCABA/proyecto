@@ -3,7 +3,7 @@ let select = window.location.pathname
 
 footer.innerHTML = `
 <footer class="footer">
-<h6>&copy; Codo a Codo 2023</h6>
+<h6>&copy; Codo a Codo 2023. Todos los derechos reservados. </h6>
 <nav class="footer_nav">
     <ul class="footer_links">
         <li class="footer_list"><a href="#"><img src="${select.includes("index.html") ? "img/whatsapp.png" : "../img/whatsapp.png"}" alt="logo whatsapp"></a></li>
