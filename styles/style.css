@@ -194,8 +194,19 @@ body {
 
 .section .section_items .body_iconos {
     height: 8rem;
-
+    animation: rotar 20s linear infinite;
 }
+
+@keyframes rotar {
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(-180deg);
+    }
+}
+
+
 
 .section>#item2>.body_iconos,
 .section>#item3>.body_iconos {
