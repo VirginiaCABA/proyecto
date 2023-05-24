@@ -94,9 +94,11 @@ body {
 
 /*--------------------------CUERPO PRINCIPAL--------------------------*/
 .section {
+
     grid-area: contenido;
     color: rgb(0, 0, 0);
-    /* display: grid; */
+    display: grid;
+    gap: 20px;
     grid-template:
         "titulo" 60px
         "cuerpo" auto;
@@ -336,8 +338,9 @@ label{
 button{
     margin-top: 20px;
 }
+
 h1{
-    font-size: 29px;
+    font-size: 32px;
 }
 
 .menu{

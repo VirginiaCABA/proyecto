@@ -106,6 +106,7 @@ section .titulo{
     width: 100%;
     margin: 0 auto;
 }
+
 .contenido{
     display: flex;
     flex-direction: column;
@@ -136,6 +137,12 @@ section .titulo{
     border-top-right-radius: .5rem;
 
 }
+
+.section .titulo h3 {
+    font-weight: 300;
+    font-style: italic;
+}
+
 .texto{
     margin: 1em;
 }
