@@ -97,10 +97,6 @@ body {
 
     grid-area: contenido;
     color: rgb(0, 0, 0);
-    /* background-color: rgba(241, 149, 149, 0.774); */
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
     display: grid;
     gap: 20px;
     grid-template:
