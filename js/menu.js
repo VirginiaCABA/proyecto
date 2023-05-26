@@ -16,6 +16,7 @@ menu.innerHTML = `
     <li class="header_list"><a ${select.includes("nosotros.html") ? active : ""} href='${select.includes("index.html") ? "pages/nosotros.html" : "nosotros.html"}'>Nosotros</a></li>
     <li class="header_list"><a ${select.includes("servicios.html") ? active : ""} href='${select.includes("index.html") ? "pages/servicios.html" : "servicios.html"}'>Servicios</a></li>
     <li class="header_list"><a ${select.includes("contacto.html") ? active : ""} href='${select.includes("index.html") ? "pages/contacto.html" : "contacto.html"}'>Contacto</a></li>
+    <li class="header_list"><a ${select.includes("clientes.html") ? active : ""} href='${select.includes("index.html") ? "pages/clientes.html" : "clientes.html"}'>Clientes</a></li>
 </ul>
 </nav>`
 
