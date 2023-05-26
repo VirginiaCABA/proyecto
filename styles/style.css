@@ -131,10 +131,6 @@ body {
 
     grid-area: contenido;
     color: rgb(0, 0, 0);
-    /* background-color: rgba(241, 149, 149, 0.774); */
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
     display: grid;
     gap: 20px;
     grid-template:
@@ -382,7 +378,7 @@ h1{
     }
 
     .section {
-        margin-top: 4rem;
+        margin-top: 6rem;
         grid-area: contenido;
         color: rgb(0, 0, 0);
         display: grid;
@@ -400,6 +396,9 @@ h1{
     .section #item3,
     .section #item4 {
         width: 100%;
+    }
+    .section #item1{
+        margin-top: 2rem;
     }
 
     .aside {
@@ -442,7 +441,7 @@ h1{
 
 
     .section {
-        margin-top: 5rem;
+        margin-top: 6rem;
         grid-area: contenido;
         color: rgb(0, 0, 0);
         display: grid;
@@ -462,6 +461,9 @@ h1{
         width: 100%;
     }
 
+    .section #item1{
+        margin-top: 2rem;
+    }
 
 
 

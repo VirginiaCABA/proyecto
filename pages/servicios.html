@@ -31,9 +31,9 @@
             <h3>Somos líder en el mercado</h3>
         </article>
         <div class="sect-cont">
-            <article class="contenido">
+            <div class="contenido">
                 <div class="subtitulo">
-                    <h2>COURIER - MENSAJERÍA - CADETES FIJOS</h2>
+                    <h3>COURIER - MENSAJERÍA - CADETES FIJOS</h3>
                 </div>
                 <div class="texto">
                     <p>Ofrecemos el servicio de moto mensajería empresarial. Realizamos todo tipo de trámites y
@@ -46,33 +46,38 @@
                         Brindamos una gran cobertura en CABA Y TODO EL GBA.</p>
                 </div>
                 <div class="calculadora">
-                    <h2>Calcule su presupuesto</h2>
+                    <div class="titulo_calcu">
+                        <h3>Calcule su presupuesto</h3>
+                    </div>
 
+                    <div class="form-calc">
+                        <form action="" class="form">
+                            <div>
+                                <label for="">Ingrese los Km aproximados</label>
+                                <br>
+                                <input type="number" class="celda" id="n1">
+                            </div>
+                            <div class="form">
+                                <button type="button" class="botones" onclick="calculadora('c_m_c')">Calcular</button>
+                                <button type="button" class="botones" onclick="limpiar('c_m_c')">Limpiar</button>
+                            </div>
+                            <div>
+                                <label for="">Precio aproximado</label>
+                                <br>
+                                <input type="number" name="resultado" class="celda" id="resultado" readonly>
+                                <label for="">$</label>
+                            </div>
 
-                    <div class="">
-                        <form action="">
-                            <label for="">Ingrese los Km aproximados</label>
-                            <br>
-                            <input type="number" class="celda" id="n1">
-                            <br>
-                            <button type="button" class="botones" onclick="calculadora('c_m_c')">Calcular</button>
-                            <button type="button" class="botones" onclick="limpiar('c_m_c')">Limpiar</button>
-                            <br>
-                            <label for="">Resultado</label>
-                            <br>
-                            <input type="number" name="resultado" class="celda" id="resultado" readonly>
-                            <label for="">$</label>
-                
                         </form>
                     </div>
 
                 </div>
-            </article>
+            </div>
         </div>
         <div class="sect-cont">
-            <article class="contenido">
+            <div class="contenido">
                 <div class="subtitulo">
-                    <h2>TRASNPORTES Y CARGAS</h2>
+                    <h3>TRASNPORTES Y CARGAS</h3>
                 </div>
                 <div class="texto">
                     <p>Contamos con Utilitarios (Mini Fletes), Camionetas y Camiones urbanos y transportes para cargas
@@ -83,33 +88,37 @@
                         Transporte pesado. Camiones Semis, playos, chasis, térmicos. Viajamos a todo el País.</p>
                 </div>
                 <div class="calculadora">
-                    <h2>Calcule su presupuesto</h2>
+                    <h3>Calcule su presupuesto</h3>
 
-                    <div class="">
-                        <form action="">
-                            <label for="">Ingrese los Km aproximados</label>
-                            <br>
-                            <input type="number" class="celda" id="n2">
-                            <br>
-                            <button type="button" class="botones" onclick="calculadora('t_c')">Calcular</button>
-                            <button type="button" class="botones" onclick="limpiar('t_c')">Limpiar</button>    
-                            <br>
-                            <label for="">Resultado</label>
-                            <br>
-                            <input type="number" name="resultado2" class="celda" id="resultado2" readonly>
-                            <label for="">$</label>
-                
+                    <div class="form-calc">
+                        <form action="" class="form">
+                            <div>
+                                <label for="">Ingrese los Km aproximados</label>
+                                <br>
+                                <input type="number" class="celda" id="n2">
+                            </div>
+                            <div class="form">
+                                <button type="button" class="botones" onclick="calculadora('t_c')">Calcular</button>
+                                <button type="button" class="botones" onclick="limpiar('t_c')">Limpiar</button>
+                            </div>
+                            <div>
+                                <label for="">Precio aproximado</label>
+                                <br>
+                                <input type="number" name="resultado" class="celda" id="resultado2" readonly>
+                                <label for="">$</label>
+                            </div>
+
                         </form>
                     </div>
 
                 </div>
 
-            </article>
+            </div>
         </div>
         <div class="sect-cont">
-            <article class="contenido">
+            <div class="contenido">
                 <div class="subtitulo">
-                    <h2>E-COMMERCE Y DISTRIBUCION DE PAQUETERIA</h2>
+                    <h3>E-COMMERCE Y DISTRIBUCION DE PAQUETERIA</h3>
                 </div>
                 <div class="texto">
                     <p>Recibimos, organizamos, ruteamos y entregamos paquetería en todo el AMBA.
@@ -124,27 +133,30 @@
                         Logística inversa.</p>
                 </div>
                 <div class="calculadora">
-                    <h2>Calcule su presupuesto</h2>
+                    <h3>Calcule su presupuesto</h3>
 
-                    <div class="">
-                        <form action="">
-                            <label for="">Ingrese los Km aproximados</label>
-                            <br>
-                            <input type="number" class="celda" id="n3">
-                            <br>
-                            <button type="button" class="botones" onclick="calculadora('e_d')">Calcular</button>
-                            <button type="button" class="botones" onclick="limpiar('e_d')">Limpiar</button>
-                            <br>
-                            <label for="">Resultado</label>
-                            <br>
-                            <input type="number" name="resultado3" class="celda" id="resultado3" readonly>
-                            <label for="">$</label>
-                
+                    <div class="form-calc">
+                        <form action="" class="form">
+                            <div>
+                                <label for="">Ingrese los Km aproximados</label>
+                                <br>
+                                <input type="number" class="celda" id="n3">
+                            </div>
+                            <div class="form">
+                                <button type="button" class="botones" onclick="calculadora('e_d')">Calcular</button>
+                                <button type="button" class="botones" onclick="limpiar('e_d')">Limpiar</button>
+                            </div>
+                            <div>
+                                <label for="">Precio aproximado</label>
+                                <br>
+                                <input type="number" name="resultado3" class="celda" id="resultado3" readonly>
+                                <label for="">$</label>
+                            </div>
                         </form>
                     </div>
 
                 </div>
-            </article>
+            </div>
         </div>
     </section>
 

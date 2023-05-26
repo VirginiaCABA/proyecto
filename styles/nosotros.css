@@ -220,6 +220,15 @@ h1{
 
 /*----------------MEDIAS QUERIES--------------*/
 
+@media screen and (max-width: 940px) and (min-width:900px) {
+    .section{
+        margin-top: 2rem;
+    }
+    .aside{
+        margin-top: 2rem;
+    }
+}
+
 @media screen and (max-width: 899px) and (min-width:814px) {
     .grid-container {
         grid-template:
@@ -230,6 +239,9 @@ h1{
 
     .aside {
         display: none;
+    }
+    .section{
+        margin-top: 3rem;
     }
 }
 

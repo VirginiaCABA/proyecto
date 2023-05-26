@@ -182,6 +182,10 @@ body {
     .aside {
         display: none;
     }
+    .section{
+      margin-top: 4rem;
+    }
+
 }
 @media screen and (max-width: 813px) and (min-width:400px) {
     .grid-container {
@@ -208,7 +212,7 @@ body {
     }
     
     .section{
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
 }
@@ -244,7 +248,7 @@ body {
         margin-right: 1em;
     }
     .section{
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     .aside {
@@ -280,7 +284,7 @@ body {
 
 
     .section {
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     .aside {

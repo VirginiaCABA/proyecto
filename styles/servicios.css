@@ -95,12 +95,11 @@ body {
 
 /*--------------------------CUERPO PRINCIPAL--------------------------*/
 .section{
-    margin-top: 5rem;
+    grid-area: contenido;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around;  
+        
 }
 section .titulo{
     width: 100%;
@@ -115,18 +114,26 @@ section .titulo{
 }
 
 .sect-cont{
+    
     background-color: rgba(233, 232, 238, 0.726);
     box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.356);
     border-radius: .5rem;
     display: flex;
     text-align: justify;
     width: 30%;
-    
     margin: 0 .5em;
-    padding: 0;
     margin-top: 2rem;
+    
+    
 }
 
+.contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+}
 .subtitulo{
     padding: 1em;
     background-color: rgba(107,174,214);
@@ -135,6 +142,11 @@ section .titulo{
     height: 6rem;
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
 
 }
 
@@ -153,17 +165,27 @@ section .titulo{
     border-bottom-right-radius: .5rem;
     display: flex;
     justify-content: center;
-    text-align: justify;    
+    text-align: center;    
     flex-wrap: wrap;
     padding: 1em;
     margin-top: auto;
     width: 100%;
+   
 }
 .botones{
     width: 40%;
-    height: 1.5rem;
+    height: 1.8rem;
     border-radius: .5rem;
-    margin: .4em 0;
+    margin: 1em .2em;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(rgba(2, 162, 255, 0.836), rgba(2, 10, 43, 0.664));
+    color: white;
+}
+.botones:hover{
+    width: 42%;
+    height: 1.9rem;
+    margin: .5em .05em;
+    font-size: 14px;
 }
 .celda{
     border-radius: .5rem;
@@ -212,112 +234,34 @@ h1{
 
 /*----------------MEDIAS QUERIES--------------*/
 
-@media screen and (max-width: 899px) and (min-width:814px) {
-    .grid-container {
-        grid-template:
-            "header   " 70px
-            "contenido " auto
-            "footer   " 60px
-    }
-
-    .aside {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 813px) and (min-width:690px) {
-    .grid-container {
-        grid-template:
-            "header   " 70px
-            "contenido " auto
-            "footer   " 60px
-    }
-
-    .contenedor ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header_list {
-        margin-bottom: .2em;
-    }
-
-    .contenedor {
-        flex-direction: row-reverse;
-    }
-
-    .aside {
-        display: none;
-    }
-
-    .section {
-        margin-top: 10rem;
-    }
-}
-
-@media screen and (max-width: 689px) and (min-width:470px) {
-    .grid-container {
-        grid-template:
-            "header   " 70px
-            "contenido " auto
-            "footer   " 60px
-    }
-
-    .contenedor ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header_list {
-        margin-bottom: .2em;
-    }
-
-    .contenedor {
-        flex-direction: row-reverse;
-    }
-
-    .aside {
-        display: none;
-    }
-
-    .section {
-        margin-top: 10rem;
-    }
-
-
-    .section #item1,
-    .section #item2 {
-        box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
-        border-radius: 2rem;
-        position: relative;
-        grid-area: cuerpo;
-        height: 15rem;
+@media screen and (max-width: 1050px) and (min-width:900px) {
+    .sect-cont{
         width: 100%;
+    }
+
+    .form{
         display: flex;
-        text-align: justify;
-        top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        text-align: center;  
+        
     }
-
-
-    .section .section_items .section_img {
-        width: 30%;
-        height: 15rem;
-
-    }
-
-    .section .section_items .section_texto {
-        position: absolute;
-        width: 70%;
-        height: 15rem;
+    .botones{
+        display: flex;
+        justify-content: center;
         align-items: center;
-        padding: 1em 1em;
-        background-color: rgb(255, 255, 255);
+        margin: 1em;
     }
-}
+    .section {
+        margin-top: 2rem;
+    }
+    .aside{
+        margin-top: 2rem;
+    }
 
-@media screen and (max-width: 469px) and (min-width: 271px){
+}
+@media screen and (max-width: 899px) and (min-width:730px) {
     .grid-container {
         grid-template:
             "header   " 70px
@@ -325,6 +269,89 @@ h1{
             "footer   " 60px
     }
 
+    .aside {
+        display: none;
+    }
+    .section {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 729px) and (min-width:461px) {
+    .grid-container {
+        grid-template:
+            "header   " 70px
+            "contenido " auto
+            "footer   " 60px
+    }
+    .sect-cont{
+        width: 100%;
+    }
+
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        text-align: center;  
+        
+    }
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+
+    }
+    .contenedor ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header_list {
+        margin-bottom: .2em;
+    }
+
+    .contenedor {
+        flex-direction: row-reverse;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    .section {
+        margin-top: 5rem;
+    }
+}
+
+ @media screen and (max-width: 460px) and (min-width:270px) {
+    .grid-container {
+        grid-template:
+            "header   " 70px
+            "contenido " auto
+            "footer   " 60px
+    }
+    .sect-cont{
+        width: 100%;
+    }
+
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        text-align: center;  
+        
+    }
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+
+    }
     .contenedor ul {
         display: flex;
         flex-direction: column;
@@ -354,48 +381,36 @@ h1{
     }
 
     .section {
-        margin-top: 10rem;
-    }
-
-
-    .section #item1,
-    .section #item2 {
-        box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
-        border-radius: 2rem;
-        position: relative;
-        grid-area: cuerpo;
-        height: 18rem;
-        width: 100%;
-        display: flex;
-        text-align: justify;
-        top: 1rem;
-    }
-
-
-    .section .section_items .section_img {
-        width: 30%;
-        height: 18rem;
-        display: none;
-
-    }
-
-    .section .section_items .section_texto {
-        position: static;
-        width: 100%;
-        height: 18rem;
-        align-items: center;
-        padding: 1em 1em;
-        background-color: rgb(255, 255, 255);
+        margin-top: 5rem;
     }
 }
-@media screen and (max-width: 270px){
+
+@media screen and (max-width: 269px){
     .grid-container {
         grid-template:
             "header   " 70px
             "contenido " auto
             "footer   " 60px
     }
+    .sect-cont{
+        width: 100%;
+    }
 
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        text-align: center;  
+        
+    }
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+
+    }
     .contenedor ul {
         display: flex;
         flex-direction: column;
@@ -411,61 +426,21 @@ h1{
         margin: 0;
     }
 
-    .logo a h1 {
-        display: none;
-    }
-
-    .header_logo {
-        height: 5rem;
-        margin-right: 1em;
-    }
     .logo a {
         display: none;
     }
+
+    .header_logo {
+        height: 5rem;
+        margin-right: 1em;
+    }
+
     .aside {
         display: none;
     }
 
     .section {
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
-
-
-    .section #item1,
-    .section #item2 {
-        box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
-        border-radius: 2rem;
-        position: relative;
-        grid-area: cuerpo;
-        height: 18rem;
-        width: 100%;
-        display: flex;
-        text-align: justify;
-        top: 1rem;
-    }
-
-
-    .section .section_items .section_img {
-        width: 30%;
-        height: 18rem;
-        display: none;
-
-    }
-
-    .section .section_items .section_texto {
-        position: static;
-        width: 100%;
-        height: 18rem;
-        align-items: center;
-        padding: 1em 1em;
-        background-color: rgb(255, 255, 255);
-    }
-
-/*---------------mapa--------------*/
-#mapDiv {
-    height: 30rem;
-    width: 30rem;
-    border-radius: .5em;
-}
 
 }
