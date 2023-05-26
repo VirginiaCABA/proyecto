@@ -85,6 +85,7 @@ body {
 
 .header {
     grid-area: header;
+    z-index: 10;
     background: linear-gradient(45deg,  #bdd7e7, #3182bd);
     position: fixed;
     width: 100%;
@@ -340,7 +341,7 @@ button{
 }
 
 h1{
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .menu{
