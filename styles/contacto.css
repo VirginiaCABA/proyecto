@@ -85,7 +85,7 @@ body {
 
 .header {
     grid-area: header;
-    background: rgb(49,130,189);
+    background: linear-gradient(45deg,  #bdd7e7, #3182bd);
     position: fixed;
     width: 100%;
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.75);
@@ -94,9 +94,11 @@ body {
 
 /*--------------------------CUERPO PRINCIPAL--------------------------*/
 .section {
+
     grid-area: contenido;
     color: rgb(0, 0, 0);
-    /* display: grid; */
+    display: grid;
+    gap: 20px;
     grid-template:
         "titulo" 60px
         "cuerpo" auto;
@@ -179,6 +181,10 @@ body {
     .aside {
         display: none;
     }
+    .section{
+      margin-top: 4rem;
+    }
+
 }
 @media screen and (max-width: 813px) and (min-width:400px) {
     .grid-container {
@@ -205,7 +211,7 @@ body {
     }
     
     .section{
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
 }
@@ -241,7 +247,7 @@ body {
         margin-right: 1em;
     }
     .section{
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     .aside {
@@ -277,7 +283,7 @@ body {
 
 
     .section {
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     .aside {
@@ -336,8 +342,9 @@ label{
 button{
     margin-top: 20px;
 }
+
 h1{
-    font-size: 29px;
+    font-size: 32px;
 }
 
 .menu{
@@ -361,3 +368,198 @@ h1{
     }
 
 }
+
+  
+  .form-input {
+    display: block;
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    padding: 2x 5px;
+    box-shadow: 1px 1px 2px 0 rgba(51, 51, 51, 0.2) inset;
+    background-color: #fff;
+    background-clip: padding-box;
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    transition: all 250ms;
+  }
+  .form-input::-moz-placeholder {
+    color: #999;
+  }
+  .form-input:-ms-input-placeholder {
+    color: #999;
+  }
+  .form-input::placeholder {
+    color: #999;
+  }
+  .form-input:focus:required {
+    border-color: #02ffd0;
+    outline: 0 none;
+  }
+  .form-input:required:-moz-placeholder-shown {
+    border: 1px solid #e8e8e8;
+  }
+  .form-input:required:-ms-input-placeholder {
+    border: 1px solid #e8e8e8;
+  }
+  .form-input:required:placeholder-shown {
+    border: 1px solid #e8e8e8;
+  }
+  .form-input:required:not(:-moz-placeholder-shown):invalid {
+    border: 1px solid red;
+    color: red;
+    box-shadow: 0 0 0 1px;
+  }
+  .form-input:required:not(:-ms-input-placeholder):invalid {
+    border: 1px solid red;
+    color: red;
+    box-shadow: 0 0 0 1px;
+  }
+  .form-input:required:not(:placeholder-shown):invalid {
+    border: 1px solid red;
+    color: red;
+    box-shadow: 0 0 0 1px;
+  }
+  .form-input:required:not(:-moz-placeholder-shown):valid {
+    border: 1px solid #04a718;
+    color: #04a718;
+    box-shadow: 0 0 0 1px;
+  }
+  .form-input:required:not(:-ms-input-placeholder):valid {
+    border: 1px solid #04a718;
+    color: #04a718;
+    box-shadow: 0 0 0 1px;
+  }
+  .form-input:required:not(:placeholder-shown):valid {
+    border: 1px solid #04a718;
+    color: #04a718;
+    box-shadow: 0 0 0 1px;
+  }
+  .form-input:required:focus:invalid {
+    border: 1px solid red;
+    color: red;
+    box-shadow: 0 0 0 1px;
+  }
+  
+  .form {
+    max-width: 30rem;
+    margin: 2rem auto;
+  }
+  .form-group {
+    margin-bottom: 24px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  .form-group--submit {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .form-input:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  .form-button {
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    background-color: #1e5778;
+    border: 0;
+    border-radius: 0.125rem;
+    transition: background-color 300ms;
+    color: white;
+  }
+  .form-button:hover, .form-button:focus {
+    background-color: #3e718f;
+  }
+  .form textarea.form-input {
+    height: 20rem;
+    resize: none;
+  }
+
+ #errorName{
+    display: none;
+    font-size: 12px;
+    line-height: 0.5;
+    color: white;
+    position: absolute;
+    background: red;
+    padding: 6px;
+  }
+
+  #errorName::before{
+    content: 'Nombre invalido';
+  }
+
+  #errorLastname{
+    display: none;
+    font-size: 12px;
+    line-height: 0.5;
+    color: white;
+    position: absolute;
+    background: red;
+    padding: 6px;
+  }
+
+  #errorLastname::before{
+    content: 'Apellido invalido';
+  }
+
+  #errorDNI{
+    display: none;
+    font-size: 12px;
+    line-height: 0.5;
+    color: white;
+    position: absolute;
+    background: red;
+    padding: 6px;
+  }
+
+  #errorDNI::before{
+    content: 'DNI invalido';
+  }
+
+  #errorMail{
+    display: none;
+    font-size: 12px;
+    line-height: 0.5;
+    color: white;
+    position: absolute;
+    background: red;
+    padding: 6px;
+  }
+
+  #errorMail::before{
+    content: 'Mail invalido';
+  }
+  
+  #errorMSG{
+    display: none;
+    font-size: 12px;
+    line-height: 0.5;
+    color: white;
+    position: absolute;
+    background: red;
+    padding: 6px;
+  }
+
+  #errorMSG::before{
+    content: 'Por favor completar el campo de ¿Por qué queres trabajar con nosotros?';
+  }
+  
+  #errorFile{
+    display: none;
+    font-size: 12px;
+    line-height: 0.5;
+    color: white;
+    position: absolute;
+    background: red;
+    padding: 6px;
+  }
+
+  #errorFile::before{
+    content: 'Por favor cargar el curriculum';
+  }

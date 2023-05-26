@@ -86,7 +86,7 @@ body {
 .header {
     grid-area: header;
     z-index: 10;
-    background: rgb(49,130,189);
+    background: linear-gradient(45deg,  #bdd7e7, #3182bd);
     width: 100%;
     position: fixed;
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.75);
@@ -219,6 +219,15 @@ h1{
 
 /*----------------MEDIAS QUERIES--------------*/
 
+@media screen and (max-width: 940px) and (min-width:900px) {
+    .section{
+        margin-top: 2rem;
+    }
+    .aside{
+        margin-top: 2rem;
+    }
+}
+
 @media screen and (max-width: 899px) and (min-width:814px) {
     .grid-container {
         grid-template:
@@ -229,6 +238,9 @@ h1{
 
     .aside {
         display: none;
+    }
+    .section{
+        margin-top: 3rem;
     }
 }
 

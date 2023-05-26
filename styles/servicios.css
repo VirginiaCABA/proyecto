@@ -86,7 +86,7 @@ body {
 .header {
     grid-area: header;
     z-index: 10;
-    background: rgb(49,130,189);
+    background: linear-gradient(45deg,  #bdd7e7, #3182bd);
     width: 100%;
     position: fixed;
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.75);
@@ -105,6 +105,14 @@ section .titulo{
     width: 100%;
     margin: 0 auto;
 }
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;    
+}
+
 .sect-cont{
     
     background-color: rgba(233, 232, 238, 0.726);
@@ -141,6 +149,12 @@ section .titulo{
     
 
 }
+
+.section .titulo h3 {
+    font-weight: 300;
+    font-style: italic;
+}
+
 .texto{
     margin: 1em;
 }
@@ -238,7 +252,12 @@ h1{
         justify-content: center;
         align-items: center;
         margin: 1em;
-
+    }
+    .section {
+        margin-top: 2rem;
+    }
+    .aside{
+        margin-top: 2rem;
     }
 
 }
@@ -252,6 +271,9 @@ h1{
 
     .aside {
         display: none;
+    }
+    .section {
+        margin-top: 4rem;
     }
 }
 
