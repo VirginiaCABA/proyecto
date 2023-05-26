@@ -378,7 +378,7 @@ h1{
     }
 
     .section {
-        margin-top: 4rem;
+        margin-top: 6rem;
         grid-area: contenido;
         color: rgb(0, 0, 0);
         display: grid;
@@ -396,6 +396,9 @@ h1{
     .section #item3,
     .section #item4 {
         width: 100%;
+    }
+    .section #item1{
+        margin-top: 2rem;
     }
 
     .aside {
@@ -438,7 +441,7 @@ h1{
 
 
     .section {
-        margin-top: 5rem;
+        margin-top: 6rem;
         grid-area: contenido;
         color: rgb(0, 0, 0);
         display: grid;
@@ -458,6 +461,9 @@ h1{
         width: 100%;
     }
 
+    .section #item1{
+        margin-top: 2rem;
+    }
 
 
 
