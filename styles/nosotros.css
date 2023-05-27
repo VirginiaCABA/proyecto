@@ -417,7 +417,7 @@ h1{
         position: relative;
         grid-area: cuerpo;
         height: 18rem;
-        width: 90%;
+        width: 100%;
         display: flex;
         text-align: justify;
         top: 1rem;
@@ -438,10 +438,10 @@ h1{
         background-color: rgb(255, 255, 255);
     }
 
-    /* .responsive-iframe {
+    .responsive-iframe {
         height: 200px;
         width: 400px;
-  }    */
+  }   
 
 }
 @media screen and (max-width: 270px){
@@ -516,10 +516,10 @@ h1{
         padding: 1em 1em;
         background-color: rgb(255, 255, 255);
     }
-    /* .responsive-iframe {
+    .responsive-iframe {
         height: 200px;
         width: 400px;
-  }    */
+  }   
 
 }
 
