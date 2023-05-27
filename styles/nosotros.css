@@ -177,6 +177,11 @@ body {
     padding: 1rem;
 }
 
+.columna {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 10px;
+}
 
 .ubicacion {
     margin: 4rem auto;
@@ -184,11 +189,7 @@ body {
 h1{
     font-size: 30px;
 }
-.columna {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 10px;
-  }
+
 
 /*--------------------------ASIDE----------------------------*/
 .aside {
@@ -224,22 +225,22 @@ h1{
 
 }
 /*---------------mapa--------------*/
-/* #mapDiv {
+#mapDiv {
     height: 22rem;
     width: 22rem;
     border-radius: .5em;
     margin: 0 auto;
-} */
+}
 
 /*------IFRAME-------*/
-/* .container {
+.container {
         margin-top: 4rem;
   } 
 
 .responsive-iframe {
         height: 250px;
         width: 450px;
-  }    */
+  }   
 
 /*----------------MEDIAS QUERIES--------------*/
 
@@ -416,7 +417,7 @@ h1{
         position: relative;
         grid-area: cuerpo;
         height: 18rem;
-        width: 100%;
+        width: 90%;
         display: flex;
         text-align: justify;
         top: 1rem;
@@ -424,8 +425,6 @@ h1{
 
 
     .section .section_items .section_img {
-        width: 30%;
-        height: 18rem;
         display: none;
 
     }
@@ -439,10 +438,10 @@ h1{
         background-color: rgb(255, 255, 255);
     }
 
-    /* .responsive-iframe {
+    .responsive-iframe {
         height: 200px;
         width: 400px;
-  }    */
+  }   
 
 }
 @media screen and (max-width: 270px){
@@ -517,6 +516,10 @@ h1{
         padding: 1em 1em;
         background-color: rgb(255, 255, 255);
     }
+    .responsive-iframe {
+        height: 200px;
+        width: 400px;
+  }   
 
 }
 
