@@ -227,6 +227,8 @@ h1{
 }
 #item5{
     grid-area: cuerpo5;
+    width: 80%;
+    margin: 1rem auto;
 }
 .responsive-iframe {
     height: 250px;
