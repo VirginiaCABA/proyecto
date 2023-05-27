@@ -225,17 +225,17 @@ body {
 h1{
     font-size: 30px;
 }
-
-.menu{
-    color: white;
-}
 #item5{
     grid-area: cuerpo5;
 }
 .responsive-iframe {
-    height: 300px;
-    width: 500px;
+    height: 250px;
+    width: 450px;
 }  
+.menu{
+    color: white;
+}
+
 
 /*--------------------------ASIDE----------------------------*/
 .aside {
@@ -436,10 +436,6 @@ h1{
     .aside {
         display: none;
     }
-    .responsive-iframe {
-        height: 250px;
-        width: 450px;
-    }  
 
 }
     
@@ -509,10 +505,6 @@ h1{
     .aside {
         display: none;
     }
-    .responsive-iframe {
-        height: 200px;
-        width: 400px;
-    }  
 }
 
 /*--------FORMULARIO---------*/
