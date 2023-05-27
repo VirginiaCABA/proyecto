@@ -233,13 +233,12 @@ h1{
 
 /*------IFRAME-------*/
 .container {
-        padding-top: 65px;
-        
+        margin-top: 4rem;
   } 
 
 .responsive-iframe {
-        height: 300px;
-        width: 500px;
+        height: 250px;
+        width: 450px;
   }   
 
 /*----------------MEDIAS QUERIES--------------*/
@@ -304,7 +303,7 @@ h1{
     }
 
     .section {
-        margin-top: 5.5rem;
+        margin-top: 6rem;
     }
 }
 
@@ -335,7 +334,7 @@ h1{
     }
 
     .section {
-        margin-top: 5.5rem;
+        margin-top: 6rem;
     }
 
 
@@ -406,7 +405,7 @@ h1{
     }
 
     .section {
-        margin-top: 5.5rem;
+        margin-top: 6rem;
     }
 
 
@@ -485,7 +484,7 @@ h1{
     }
 
     .section {
-        margin-top: 5.5rem;
+        margin-top: 6rem;
     }
 
 
