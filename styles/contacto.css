@@ -85,6 +85,7 @@ body {
 
 .header {
     grid-area: header;
+    z-index: 10;
     background: linear-gradient(45deg,  #bdd7e7, #3182bd);
     position: fixed;
     width: 100%;
@@ -344,7 +345,7 @@ button{
 }
 
 h1{
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .menu{
@@ -466,11 +467,12 @@ h1{
     padding: 0.5rem 1rem;
     font-size: 1.125rem;
     cursor: pointer;
-    background-color: #1e5778;
-    border: 0;
-    border-radius: 0.125rem;
+    background: linear-gradient(rgba(2, 162, 255, 0.836), rgba(2, 10, 43, 0.664));
+    border-radius: 0.5rem;
+    margin: 1em 0.2em;
     transition: background-color 300ms;
     color: white;
+
   }
   .form-button:hover, .form-button:focus {
     background-color: #3e718f;
