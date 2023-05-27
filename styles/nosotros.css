@@ -92,6 +92,9 @@ body {
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.75);
 }
 
+.menu{
+    color: white;
+}
 
 /*--------------------------CUERPO PRINCIPAL--------------------------*/
 .section {
@@ -174,15 +177,18 @@ body {
     padding: 1rem;
 }
 
+
 .ubicacion {
     margin: 4rem auto;
 }
 h1{
     font-size: 30px;
 }
-.menu{
-    color: white;
-}
+.columna {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 10px;
+  }
 
 /*--------------------------ASIDE----------------------------*/
 .aside {
@@ -217,15 +223,41 @@ h1{
     padding: 0 10px;
 
 }
+/*---------------mapa--------------*/
+#mapDiv {
+    height: 22rem;
+    width: 22rem;
+    border-radius: .5em;
+    margin: 0 auto;
+}
+
+/*------IFRAME-------*/
+.container {
+        padding-top: 65px;
+        
+  } 
+
+.responsive-iframe {
+        height: 300px;
+        width: 500px;
+  }   
 
 /*----------------MEDIAS QUERIES--------------*/
 
-@media screen and (max-width: 940px) and (min-width:900px) {
+@media screen and (max-width: 1052px) and (min-width:924px) {
     .section{
         margin-top: 2rem;
     }
     .aside{
         margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 923px) and (min-width:900px) {
+    .section{
+        margin-top: 4rem;
+    }
+    .aside{
+        margin-top: 4rem;
     }
 }
 
@@ -241,7 +273,7 @@ h1{
         display: none;
     }
     .section{
-        margin-top: 3rem;
+        margin-top: 4rem;
     }
 }
 
@@ -272,7 +304,7 @@ h1{
     }
 
     .section {
-        margin-top: 4rem;
+        margin-top: 5.5rem;
     }
 }
 
@@ -303,7 +335,7 @@ h1{
     }
 
     .section {
-        margin-top: 4rem;
+        margin-top: 5.5rem;
     }
 
 
@@ -374,7 +406,7 @@ h1{
     }
 
     .section {
-        margin-top: 4rem;
+        margin-top: 5.5rem;
     }
 
 
@@ -407,6 +439,12 @@ h1{
         padding: 1em 1em;
         background-color: rgb(255, 255, 255);
     }
+
+    .responsive-iframe {
+        height: 200px;
+        width: 400px;
+  }   
+
 }
 @media screen and (max-width: 270px){
     .grid-container {
@@ -447,7 +485,7 @@ h1{
     }
 
     .section {
-        margin-top: 4rem;
+        margin-top: 5.5rem;
     }
 
 
@@ -483,27 +521,3 @@ h1{
 
 }
 
-/*---------------mapa--------------*/
-#mapDiv {
-    height: 22rem;
-    width: 22rem;
-    border-radius: .5em;
-    margin: 0 auto;
-}
-
-/*------IFRAME-------*/
-.container {
-        padding-top: 65px;
-        
-  } 
-
-.responsive-iframe {
-        height: 300px;
-        width: 500px;
-  }    
-
-  .columna {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 10px;
-  }

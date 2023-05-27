@@ -259,6 +259,14 @@ h1{
     .aside{
         margin-top: 2rem;
     }
+    @media screen and (max-width: 923px) and (min-width:900px) {
+        .section {
+            margin-top: 4rem;
+        }
+        .aside{
+            margin-top: 4rem;
+        }
+    }
 
 }
 @media screen and (max-width: 899px) and (min-width:730px) {
@@ -322,7 +330,7 @@ h1{
     }
 
     .section {
-        margin-top: 5rem;
+        margin-top: 5.5rem;
     }
 }
 
@@ -381,7 +389,7 @@ h1{
     }
 
     .section {
-        margin-top: 5rem;
+        margin-top: 5.5rem;
     }
 }
 
@@ -440,7 +448,7 @@ h1{
     }
 
     .section {
-        margin-top: 5rem;
+        margin-top: 5.5rem;
     }
 
 }

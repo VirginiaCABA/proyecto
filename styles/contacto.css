@@ -170,6 +170,14 @@ body {
     padding: 0 10px;
 
 }
+@media screen and (max-width: 1052px) and (min-width:970px) {
+  .section{
+      margin-top: 2rem;
+  }
+  .aside{
+      margin-top: 2rem;
+  }
+}
 
 @media screen and (max-width: 970px) and (min-width:814px) {
     .grid-container {
@@ -212,7 +220,7 @@ body {
     }
     
     .section{
-        margin-top: 6rem;
+        margin-top: 6.5rem;
     }
 
 }
@@ -248,7 +256,7 @@ body {
         margin-right: 1em;
     }
     .section{
-        margin-top: 6rem;
+        margin-top: 7.5rem;
     }
 
     .aside {
@@ -284,7 +292,7 @@ body {
 
 
     .section {
-        margin-top: 6rem;
+        margin-top: 7.5rem;
     }
 
     .aside {
@@ -369,7 +377,6 @@ h1{
     }
 
 }
-
   
   .form-input {
     display: block;
