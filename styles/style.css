@@ -229,13 +229,6 @@ h1{
 .menu{
     color: white;
 }
-#item5{
-    grid-area: cuerpo5;
-}
-.responsive-iframe {
-    height: 250px;
-    width: 450px;
-}  
 
 /*--------------------------ASIDE----------------------------*/
 .aside {
@@ -315,8 +308,7 @@ h1{
         grid-template:
             "titulo    titulo" 60px
             "cuerpo1  cuerpo2" auto
-            "cuerpo3  cuerpo4" auto 
-            "cuerpo5  cuerpo5" auto /
+            "cuerpo3  cuerpo4" auto /
             1fr 1fr;
     }
 
@@ -358,8 +350,7 @@ h1{
             "cuerpo1 " auto
             "cuerpo2" auto
             "cuerpo3 " auto
-            "cuerpo4" auto
-            "cuerpo5" auto;
+            "cuerpo4" auto;
     }
 
     .section #item1,
@@ -419,8 +410,7 @@ h1{
             "cuerpo1 " auto
             "cuerpo2" auto
             "cuerpo3 " auto
-            "cuerpo4" auto
-            "cuerpo5" auto;
+            "cuerpo4" auto;
     }
 
     .section #item1,
@@ -483,8 +473,7 @@ h1{
             "cuerpo1 " auto
             "cuerpo2" auto
             "cuerpo3 " auto
-            "cuerpo4" auto
-            "cuerpo5" auto;
+            "cuerpo4" auto;
     }
 
     .section #item1,
