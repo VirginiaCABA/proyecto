@@ -224,22 +224,22 @@ h1{
 
 }
 /*---------------mapa--------------*/
-#mapDiv {
+/* #mapDiv {
     height: 22rem;
     width: 22rem;
     border-radius: .5em;
     margin: 0 auto;
-}
+} */
 
 /*------IFRAME-------*/
-.container {
+/* .container {
         margin-top: 4rem;
   } 
 
 .responsive-iframe {
         height: 250px;
         width: 450px;
-  }   
+  }    */
 
 /*----------------MEDIAS QUERIES--------------*/
 
@@ -439,10 +439,10 @@ h1{
         background-color: rgb(255, 255, 255);
     }
 
-    .responsive-iframe {
+    /* .responsive-iframe {
         height: 200px;
         width: 400px;
-  }   
+  }    */
 
 }
 @media screen and (max-width: 270px){
