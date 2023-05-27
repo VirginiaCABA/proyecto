@@ -436,6 +436,10 @@ h1{
     .aside {
         display: none;
     }
+    .responsive-iframe {
+        height: 250px;
+        width: 450px;
+    }  
 
 }
     
@@ -505,6 +509,10 @@ h1{
     .aside {
         display: none;
     }
+    .responsive-iframe {
+        height: 200px;
+        width: 400px;
+    }  
 }
 
 /*--------FORMULARIO---------*/
