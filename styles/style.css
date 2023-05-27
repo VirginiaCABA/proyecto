@@ -225,19 +225,17 @@ body {
 h1{
     font-size: 30px;
 }
+
+.menu{
+    color: white;
+}
 #item5{
     grid-area: cuerpo5;
-    width: 80%;
-    margin: 1rem auto;
 }
 .responsive-iframe {
     height: 250px;
     width: 450px;
 }  
-.menu{
-    color: white;
-}
-
 
 /*--------------------------ASIDE----------------------------*/
 .aside {
