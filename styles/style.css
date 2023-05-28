@@ -509,7 +509,7 @@ label {
 .tableCliente{
     background-color: #448ec3;
     /* border: rgba(2, 162, 255, 0.836) 5px solid; */
-    border-radius: 3rem;
+    border-radius: 1rem;
     box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.5);
 }
 .tableCliente {
@@ -519,7 +519,6 @@ label {
   }
   
   .tableCliente td, .tableCliente th {
-
     padding: 8px;
   }
   
@@ -535,9 +534,9 @@ label {
   }
 
   .th-l{
-    border-top-left-radius: 3rem;
+    border-top-left-radius: 1rem;
   }
 
   .th-r{
-    border-top-right-radius: 3rem;
+    border-top-right-radius: 1rem;
   }
